@@ -1,14 +1,15 @@
+from typing import List
 nums = [0, 1, 0, 3, 12]
 
-def moveZeroes(nums) -> None:
+def moveZeroes(nums: List[int]) -> None:
 	j = 0
-
-	for i in range(len(nums)):
+	n = len(nums)
+	for i in range(n):
 		if(nums[i] != 0):
 			nums[j] = nums[i]
 			j += 1
 
-	for i in range(j, len(nums)):
+	for i in range(j, n):
 		nums[i] = 0
 
 moveZeroes(nums)
