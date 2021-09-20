@@ -2,7 +2,7 @@ from typing import List
 
 nums = [1, 2, 3, 1]
 
-def containsDuplicate(nums: List[int]) -> int:
+def containsDuplicate(nums: List[int]) -> bool:
 	seen = set()
 	for i in range(len(nums)):
 		if nums[i] in seen:
